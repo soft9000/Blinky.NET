@@ -57,8 +57,8 @@ namespace ConsoleAnimation
                 int which = rnd.Next(0, blinkers.Count);
                 blinkers[which].OnBlink();
                 blinkers[which].OnWait();
-
-          }
+                Console.CursorVisible = false; // Yes - many need this (sigh)!
+            }
         }
     }
 }
